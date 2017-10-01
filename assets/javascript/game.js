@@ -6,36 +6,35 @@ var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 	console.log(letterChoices[14]);
 
-// canvas drawing
+// canvas drawing variables
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
+// draw setup
+
 // draw ground
-ctx.beginPath();
-ctx.lineWidth = 2;
-ctx.moveTo(50,250);
-ctx.lineTo(150,250);
-ctx.lineTo(150,240);
-ctx.lineTo(50,240);
-ctx.closePath();
-ctx.stroke();
 ctx.fillStyle = "black";
-ctx.fill();
-
-
+ctx.strokeStyle = "black";
+ctx.lineWidth = "1";
+ctx.strokeRect(25, 180, 200, 1);
 
 // draw gallows pole
-
-
+ctx.fillStyle = "black";
+ctx.strokeStyle = "black";
+ctx.lineWidth = "1";
+ctx.strokeRect(35, 25, 1, 155);
 
 // draw hanging pole
-
-
+ctx.fillStyle = "black";
+ctx.strokeStyle = "black";
+ctx.lineWidth = "1";
+ctx.strokeRect(25, 25, 100, 1);
 
 // draw brace
-
-
-
-
-
-// test
+ctx.fillStyle = "black";
+ctx.strokeStyle = "black";
+ctx.lineWidth = "2";
+ctx.beginPath();
+ctx.moveTo(35, 50);
+ctx.lineTo(60, 25);
+ctx.stroke();
