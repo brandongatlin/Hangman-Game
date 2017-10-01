@@ -1,0 +1,65 @@
+h1 {
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.row-containers {
+	padding: 10px;
+}
+
+#row-container-1 {
+	background-color: yellow;
+}
+
+#row-1 {
+	height: 150px;
+	padding: 10px;
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+#col-1-1 {
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: pink;
+}
+
+#col-1-2 {
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: blue;
+}
+
+#row-container-2 {
+		background-color: green;
+
+}
+
+#row-2 {
+	height: 800px;
+}
+
+#col-2-1 {
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: red;
+}
+
+#col-2-2 {
+	border: 1px;
+	border-color: black;
+	border-style: solid;
+	background-color: blue;
+}
+
+
+
+
+
