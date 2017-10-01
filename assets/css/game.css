@@ -64,6 +64,16 @@ padding: 50px;
 margin-left: 100px;
 }
 
+canvas {
+	height: 200px;
+	width: 300px;
+	background-color: #ffffff;
+	border: 2px;
+	border-color: black;
+	border-style: solid;
+	margin-left: 150px;
+}
+
 
 
 
