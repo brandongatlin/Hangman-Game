@@ -1,4 +1,4 @@
-var wordList = ["animales", "gato", "perro", "serpiente", "comida", "manzana", "limon", "cereza", "escuela", "lapiz", "goma", "papel"];
+var wordList = ["gato", "perro", "serpiente", "manzana", "limon", "cereza", "escuela", "lapiz", "goma", "papel", "boligrafo", "borrador", "pizarra", "cuaderno"];
 
     console.log(wordList[3]);
 
@@ -6,13 +6,20 @@ var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 	console.log(letterChoices[14]);
 
+var iniciar = document.getElementById("iniciar");
+
+
+
+var randomWord = wordList[Math.floor(Math.random() * wordList.length)];
+
+console.log(randomWord);
+
+
 
 
 // canvas drawing variables
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
-
-clearRect();
 
 // draw setup
 
