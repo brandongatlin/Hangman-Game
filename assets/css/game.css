@@ -68,6 +68,12 @@ margin-left: 100px;
 
 }
 
+#word-container {
+	height: 400px;
+	width: 100%;
+	background-color: green;
+}
+
 canvas {
 	background-color: #ffffff;
 	border: 2px;
