@@ -6,9 +6,13 @@ var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 	console.log(letterChoices[14]);
 
+
+
 // canvas drawing variables
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
+
+clearRect();
 
 // draw setup
 
