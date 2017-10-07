@@ -8,13 +8,15 @@ var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 var iniciar = document.getElementById("iniciar");
 
-var randomWord = wordList[Math.floor(Math.random() * wordList.length)];
     
-    function getRandomWord() {
-    document.getElementById("random-word-here").innerHTML = wordList[getRandomWord];
-};
+    
 
-
+// test
+function getRandomWord() {
+    var randomWord = Math.floor(Math.random() * (wordList.length));
+    document.getElementById("random-word-here").innerHTML = wordList[randomWord];
+    
+}
 console.log(getRandomWord);
 
 
