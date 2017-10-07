@@ -2,24 +2,43 @@ var wordList = ["gato", "perro", "serpiente", "manzana", "limon", "cereza", "esc
 
     console.log(wordList[3]);
 
+var answerArray = [];
+
 var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "\u00f1", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 	console.log(letterChoices[14]);
 
 var iniciar = document.getElementById("iniciar");
 
-    
-    
-
-// test
+// random word generator function
 function getRandomWord() {
     var randomWord = Math.floor(Math.random() * (wordList.length));
-    document.getElementById("random-word-here").innerHTML = wordList[randomWord];
+    document.getElementById("random-word-here").innerHTML = (wordList[randomWord]);
     
 }
-console.log(getRandomWord);
+
+for (var i = 0; i < randomWord.length; i++) {
+    answerArray[i] = "_";
+    
+      }
+
+var remainingLetters = randomWord.length;
 
 
+// test
+
+x = randomWord.length;
+
+y = x - 1;
+
+while (x>0) {
+    numChar++;
+    var letter = randomWord.substring(y,x);
+    if (letter === "") {
+        document.getElementById("letter" + x).innerHTML = "&nbsp;";
+
+    }
+}
 
 
 
@@ -69,11 +88,13 @@ ctx.stroke();
 // draw man
 
 // draw head
+
 ctx.strokeStyle = "black";
 ctx.lineWidth = "2";
 ctx.beginPath();
 ctx.arc(110, 60, 15, 0, Math.PI*2, false);
 ctx.stroke();
+
 
 // draw torso
 ctx.fillStyle = "black";
