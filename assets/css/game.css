@@ -74,6 +74,10 @@ margin-left: 100px;
 	background-color: green;
 }
 
+#word-holder {
+	color: white;
+}
+
 canvas {
 	background-color: #ffffff;
 	border: 2px;
