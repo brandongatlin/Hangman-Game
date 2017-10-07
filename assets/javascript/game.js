@@ -2,6 +2,8 @@ var wordList = ["gato", "perro", "serpiente", "manzana", "limon", "cereza", "esc
 
     console.log(wordList[3]);
 
+var randomWord = '';
+
 var answerArray = [];
 
 var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "\u00f1", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -10,20 +12,29 @@ var letterChoices = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
 
 var iniciar = document.getElementById("iniciar");
 
+
 // random word generator function
 function getRandomWord() {
-    var randomWord = Math.floor(Math.random() * (wordList.length));
-    document.getElementById("random-word-here").innerHTML = (wordList[randomWord]);
+    randomWord = wordList[Math.floor(Math.random() * (wordList.length))];
+    document.getElementById("random-word-here").innerHTML = randomWord;
+    for (var i = 0; i < randomWord.length; i++) {
+    answerArray[i] = "_";
+    console.log(randomWord);
+
     
+      }  
 }
 
-for (var i = 0; i < randomWord.length; i++) {
-    answerArray[i] = "_";
-    
-      }
+
+
+// change words to spaces with underscores
+
 
 var remainingLetters = randomWord.length;
+console.log(remainingLetters);
 
+
+// new array with same words to display as spaces
 
 // test
 
